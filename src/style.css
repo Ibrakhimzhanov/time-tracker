@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+* {
+  font-family: "Rubik";
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: hsl(226, 43%, 10%);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-areas:
+    "profile work play study"
+    "profile exercise social selfcare";
+  gap: 2em;
+  position: relative;
+  margin-top: 100px;
+}
+.card-profile {
+  width: 100%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  grid-area: profile;
+}
+.card {
+  width: 300px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  height: 300px;
+}
+
+.card-profile .profile {
+  background-color: hsl(246, 80%, 60%);
+  padding: 20px;
+  border-radius: 20px;
+}
+.card-profile .profile > p {
+  font-weight: 200;
+}
+.card-profile .profile-text > h2 {
+  font-size: 3em;
+  font-weight: 300;
+}
+.avatar {
+  width: 40%;
+  outline: 2px solid white;
+  border-radius: 50%;
+}
+.card-profile ul {
+  margin-top: 40px;
+}
+.card-profile .profile-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-profile ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+  transition: 0.3s;
+  font-size: 1.5em;
+}
+.card-profile ul li:hover {
+  color: white;
+}
+
+.transition {
+  animation: change 1s forwards;
+}
+
+@keyframes change {
+  from {
+    transform-origin: left;
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.attribution {
+  padding: 20px;
+  color: white;
+}
+.attribution > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+/* responsive deign */
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "profile"
+      "work"
+      "play"
+      "study"
+      "exercise"
+      "social"
+      "selfcare";
+    padding: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-profile ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  .profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,164 @@
+:root {
+  --work: hsl(15, 100%, 70%);
+  --play: hsl(195, 74%, 62%);
+  --study: hsl(348, 100%, 68%);
+  --exercise: hsl(145, 58%, 55%);
+  --social: hsl(264, 64%, 52%);
+  --self-care: hsl(43, 84%, 65%);
+
+  --blue: hsl(246, 80%, 60%);
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+
+  --f-light: 300;
+  --f-medium: 400;
+  --f-bold: 400;
+}
+
+.Work {
+  background-color: var(--work);
+  grid-area: work;
+}
+.card.Work .head {
+  height: 50px;
+  text-align: right;
+}
+.card.Work .icon {
+  width: 30%;
+}
+.Work > .text {
+  background-color: var(--very-dark-blue);
+  border-radius: 20px;
+  font-weight: var(--f-light);
+  padding: 20px;
+}
+.card .text {
+  transition: 0.3s;
+}
+.card .text:hover {
+  background-color: var(--blue);
+}
+.card.Self.Care .text:hover {
+  background: var(--very-dark-blue);
+}
+
+.card.Work .text > h2 {
+  font-size: 35px;
+}
+.head-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10;
+  padding-right: 10px;
+  font-weight: var(--f-medium);
+  font-size: 18px;
+}
+.head-text span {
+  font-size: 2em;
+  font-weight: var(--f-bold);
+  cursor: pointer;
+}
+
+.Play {
+  background-color: var(--play);
+  grid-area: play;
+}
+.card.Play .head {
+  height: 50px;
+  text-align: right;
+}
+.card.Play .icon {
+  width: 30%;
+}
+.Play > .text {
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  font-weight: var(--f-light);
+  padding: 20px;
+}
+.card.Play .text > h2 {
+  font-size: 35px;
+}
+.Self.Care {
+  background-color: var(--self-care);
+  grid-area: selfcare;
+}
+.card.Self.Care .head {
+  height: 50px;
+  text-align: right;
+}
+.card.Self.Care .icon {
+  width: 30%;
+}
+.Self.Care > .text {
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  font-weight: var(--f-light);
+  padding: 20px;
+}
+.card.Self.Care .text > h2 {
+  font-size: 35px;
+}
+.Study {
+  background-color: var(--study);
+  grid-area: study;
+}
+.card.Study .head {
+  height: 50px;
+  text-align: right;
+}
+.card.Study .icon {
+  width: 30%;
+}
+.Study > .text {
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  font-weight: var(--f-light);
+  padding: 20px;
+}
+.card.Study .text > h2 {
+  font-size: 35px;
+}
+.Exercise {
+  background-color: var(--exercise);
+  grid-area: exercise;
+}
+.card.Exercise .head {
+  height: 50px;
+  text-align: right;
+}
+.card.Exercise .icon {
+  width: 30%;
+}
+.Exercise > .text {
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  font-weight: var(--f-light);
+  padding: 20px;
+}
+.card.Exercise .text > h2 {
+  font-size: 35px;
+}
+.Social {
+  background-color: var(--social);
+  grid-area: social;
+}
+.card.Social .head {
+  height: 50px;
+  text-align: right;
+}
+.card.Social .icon {
+  width: 30%;
+}
+.Social > .text {
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  font-weight: var(--f-light);
+  padding: 20px;
+}
+.card.Social .text > h2 {
+  font-size: 35px;
+}
