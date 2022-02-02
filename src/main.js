@@ -1,7 +1,7 @@
 const container = document.querySelector(".card-wrapper");
 const lists = document.querySelectorAll(".card-profile ul li");
 
-let response = await fetch("./src/data.json");
+let response = await fetch("src/data.json");
 let datas = await response.json();
 
 container.innerHTML =
