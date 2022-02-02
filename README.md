@@ -99,7 +99,6 @@
 - Мой блок на - [dev.to](https://dev.to/ibrakhimzhanov)
 - Frontend Mentor - [@Ibrakhimzhanov](https://www.frontendmentor.io/profile/Ibrakhimzhanov)
 - Профиль на - [Linkedin](https://www.linkedin.com/in/ibrakhimzhanov/)
-- Профиль 
 
 ## Благодарность
 
