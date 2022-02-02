@@ -9,7 +9,7 @@ body {
   flex-wrap: wrap;
   background-color: hsl(226, 43%, 10%);
 }
-.container {
+.card-wrapper {
   display: grid;
   grid-template-columns: repeat (3, 1fr);
   grid-template-areas:
@@ -17,7 +17,7 @@ body {
     "profile exercise social selfcare";
   gap: 2em;
   position: relative;
-  margin-top: 100px;
+  margin-top: 95px;
 }
 .card-profile {
   width: 100%;

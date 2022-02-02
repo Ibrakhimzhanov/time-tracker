@@ -41,7 +41,7 @@
   background-color: var(--blue);
 }
 .card.Self.Care .text:hover {
-  background: var(--very-dark-blue);
+  background: var(--blue);
 }
 
 .card.Work .text > h2 {

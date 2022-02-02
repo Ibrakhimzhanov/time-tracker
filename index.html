@@ -4,34 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
-    /> -->
+    />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/card.css" />
     <title>Time tracking dashboard</title>
   </head>
   <body>
     <div class="container">
-      <div class="card-profile">
-        <div class="profile">
-          <img src="./images/image-jeremy.png" alt="..." class="avatar" />
-          <div class="profile-text">
-            <p>Report for</p>
-            <h2>Jeremy<br />Robson</h2>
+      <div class="card-wrapper">
+        <div class="card-profile">
+          <div class="profile">
+            <img src="./images/image-jeremy.png" alt="..." class="avatar" />
+            <div class="profile-text">
+              <p>Report for</p>
+              <h2>Jeremy<br />Robson</h2>
+            </div>
           </div>
+          <ul>
+            <li id="daily">Daily</li>
+            <li id="weekly">Weekly</li>
+            <li id="monthly">Monthly</li>
+          </ul>
         </div>
-        <ul>
-          <li id="daily">Daily</li>
-          <li id="weekly">Weekly</li>
-          <li id="monthly">Monthly</li>
-        </ul>
       </div>
     </div>
 
-    <script src="./src/data.json"></script>
+    <script src="../src/data.json"></script>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>
