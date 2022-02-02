@@ -51,7 +51,7 @@
 Я придерживался, чтобы весь процесс был динамическим и в тоже время старался написать меньше, но понятный код.
 Столкнулся с проблемами в работе с асинхронными запросами. Благо есть MDN в решении этих проблем помог.
 
-``html
+```html
   <ul>
     <li id="daily">Daily</li>
     <li id="weekly">Weekly</li>
@@ -82,7 +82,9 @@
 ```
 
 ```js
-  datas.map((data) => { let lowerTitle = data.title == "Self Care" ? "self-care" : data.title.toLowerCase(); let imgUrl = `./images/icon-${lowerTitle}.svg`;
+  datas.map((data) => { 
+    let lowerTitle = data.title == "Self Care" ? "self-care" :
+    data.title.toLowerCase(); let imgUrl = `./images/icon-${lowerTitle}.svg`;
   }
 
 ```
