@@ -51,19 +51,17 @@
 Я придерживался, чтобы весь процесс был динамическим и в тоже время старался написать меньше, но понятный код.
 Столкнулся с проблемами в работе с асинхронными запросами. Благо есть MDN в решении этих проблем помог.
 
-Чтобы узнать, как вы можете добавлять фрагменты кода, см. Ниже:
-
-``<ul>
-
-<li id="daily">Daily</li>
-<li id="weekly">Weekly</li>
-<li id="monthly">Monthly</li>
-
+``html
+  <ul>
+    <li id="daily">Daily</li>
+    <li id="weekly">Weekly</li>
+    <li id="monthly">Monthly</li>
   </ul>
 
 ```
 
-``:root {
+```CSS
+  :root {
     --work: hsl(15, 100%, 70%);
     --play: hsl(195, 74%, 62%);
     --study: hsl(348, 100%, 68%);
@@ -83,10 +81,12 @@
     }
 ```
 
-``datas.map((data) => { let lowerTitle = data.title == "Self Care" ? "self-care" : data.title.toLowerCase(); let imgUrl = `./images/icon-${lowerTitle}.svg`;
-}
+```js
+  datas.map((data) => { let lowerTitle = data.title == "Self Care" ? "self-care" : data.title.toLowerCase(); let imgUrl = `./images/icon-${lowerTitle}.svg`;
+  }
 
 ```
+
 ### Продолжение разработки
 
 Проект сделан без адаптации. Дальше хочу сделать адаптацию и поработать с стилями. Дабы сделать максимально приближенный к дизайну.
@@ -97,7 +97,7 @@
 - Мой блок на - [dev.to](https://dev.to/ibrakhimzhanov)
 - Frontend Mentor - [@Ibrakhimzhanov](https://www.frontendmentor.io/profile/Ibrakhimzhanov)
 - Профиль на - [Linkedin](https://www.linkedin.com/in/ibrakhimzhanov/)
-
+- Профиль 
 
 ## Благодарность
 
