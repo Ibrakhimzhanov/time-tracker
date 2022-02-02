@@ -83,8 +83,7 @@
 
 ```js
   datas.map((data) => { 
-    let lowerTitle = data.title == "Self Care" ? "self-care" :
-    data.title.toLowerCase(); 
+    let lowerTitle = data.title == "Self Care" ? "self-care" : data.title.toLowerCase(); 
     let imgUrl = `./images/icon-${lowerTitle}.svg`;
   }
 
