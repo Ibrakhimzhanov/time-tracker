@@ -25,7 +25,7 @@ container.innerHTML =
       </div>
     </div>
   `;
-  });
+  }).join(' ');
 
 container.addEventListener("click", (event) => {
   container.innerHTML =
@@ -51,5 +51,5 @@ container.addEventListener("click", (event) => {
         </div>
       </div>
     `;
-    });
+    }).join(' ');
 });
